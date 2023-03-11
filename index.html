@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="icon" href="/Image/computer-icons-calculator-symbol-calculation-clip-art-calculator.jpg">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>CALCULATOR</h2>
+    <center>
+        <div class="Calculator_Screen">
+           <input class="input" type="text" placeholder="Enter the value">
+            <input class="result" type="number" placeholder="Result">
+             <div class="Calculator_keys">
+            <table>
+                <tr>
+                <td><button  value="8" onclick="ButtonClick(8)" >8</button></td>
+                <td><button value="7" onclick="ButtonClick(7)">7</button></td>
+                <td><button value="9" onclick="ButtonClick(9)">9</button></td>
+                <td><button value="&divide;" onclick="ButtonClick('/')">&divide;</button></td>
+                <td><button value="delete" onclick="Delete()">DEL</button></td>
+                </tr>
+
+                <tr>
+                    <td><button value="4" onclick="ButtonClick(4)">4</button></td>
+                    <td><button value="5" onclick="ButtonClick(5)">5</button></td>
+                    <td><button value="6" onclick="ButtonClick(6)">6</button></td>
+                    <td><button value="*" onclick="ButtonClick('*')">&times;</button></td>
+                    <td><button value="%" onclick="ButtonClick('%')">&percnt;</button></td>
+                </tr>
+
+                <tr>
+                    <td><button value="1" onclick="ButtonClick('1')">1</button></td>
+                    <td><button value="2" onclick="ButtonClick('2')">2</button></td>
+                    <td><button value="3" onclick="ButtonClick('3')">3</button></td>
+                    <td><button value="-" onclick="ButtonClick('-')">&minus;</button></td>
+                    <td><button value="all-clear" onclick="AllClear()">CLR</button></td>
+                </tr>
+                <tr>
+                    <td><button value="0" onclick="ButtonClick(0)">0</button></td>
+                    <td colspan="2"><button class="equal-sign" value="=" onclick="Equal()">=</button></td>
+                    <td><button value="+" onclick="ButtonClick('+')">&plus;</button></td>
+                    <td><button value="." onclick="ButtonClick('.')">.</button></td>
+                </tr>
+            </table>
+          </div>
+        </div>
+    </center>
+    <script src="./App.js"></script>
+</body>
+</html>
